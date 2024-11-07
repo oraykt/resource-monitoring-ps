@@ -30,9 +30,9 @@ Set the following thresholds in the script (default values provided):
 1. **Download the script** to a directory of your choice.
 2. **Run the script** from PowerShell with the following commands:
 
-  powershell
+  ```powershell
    .\Resource-Monitor.ps1 {start|stop|restart}
-  
+  ```
 
    - `start`: Starts the resource monitor in the background.
    - `stop`: Stops the resource monitor and cleans up the job.
@@ -41,19 +41,19 @@ Set the following thresholds in the script (default values provided):
 ### Examples
 
 To start monitoring:
-powershell
+```powershell
 .\Resource-Monitor.ps1 start
-
+```
 
 To stop monitoring:
-powershell
+```powershell
 .\Resource-Monitor.ps1 stop
-
+```
 
 To restart monitoring:
-powershell
+```powershell
 .\Resource-Monitor.ps1 restart
-
+```
 
 ## Logging
 
@@ -67,14 +67,14 @@ powershell
 
 ## Example Log Output
 
-
+```
 2024-11-07 14:00:00 - Starting resource monitor...
 2024-11-07 14:00:10 - Starting resource check...
 2024-11-07 14:00:10 - WARNING: CPU usage is above 90% - Current: 92.5%
 2024-11-07 14:00:10 - WARNING: Memory usage is above 80% - Current: 83.2%
 2024-11-07 14:00:10 - WARNING: Disk usage on C: is above 85% - Current: 88.6%
 2024-11-07 14:00:10 - Resource check complete.
-
+```
 
 ## Notes
 
